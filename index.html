@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Motors</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+        }
+
+        #carousel {
+            padding-top: 100px;
+        }
+
+        section {
+            padding-top: 75px;
+        }
+
+        .nav-link, .nav-link.active {
+            color: #ffffff;
+        }
+    
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        
+        .card-title, .card-text, .card-header, .card-footer {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>EBAC Motors</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobrealoja">Sobre a Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#showroom">Showroom</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img class="d-block w-100" src="./media/slide1.png" alt="Foto01" />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="d-block w-100" src="./media/slide2.png" alt="Foto02" />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img class="d-block w-100" src="./media/slide3.png" alt="Foto03" />
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#carousel-exemplo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="sobrealoja">
+            <h2>Sobre a Loja</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nihil molestiae nulla, consequuntur delectus officia rem dolore, debitis nobis, blanditiis sit sapiente! Pariatur fuga dolore nostrum libero quos temporibus repellendus? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi esse incidunt excepturi nobis ab obcaecati rerum, voluptate quia? Quasi necessitatibus distinctio accusantium voluptatem earum nam fuga ipsam, aspernatur quos quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ut quo veniam, dolor magnam amet delectus voluptate molestiae inventore suscipit! Excepturi eius placeat rem beatae molestias nulla cupiditate quaerat consequuntur?</p>
+        </section>
+        
+        <section id="showroom">
+            <h2>Showroom</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Raridade!
+                        </div>
+                        <img src="./media/fusca.png" />
+                        <div class="card-body">
+                            <h4 class="card-title">Fursca 1969</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quasi natus sint omnis ducimus rem quam officia odit quaerat, nihil fuga, aspernatur nulla ex veniam ea ad, explicabo dolorum et.
+                            </p>
+                            <a href="#" class="btn btn-primary">Estou Interessado!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Pura Emoção!
+                        </div>
+                        <img src="./media/moto-bmw.png" />
+                        <div class="card-body">
+                            <h4 class="card-title">Moto XPTO-1000</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quasi natus sint omnis ducimus rem quam officia odit quaerat, nihil fuga, aspernatur nulla ex veniam ea ad, explicabo dolorum et.
+                            </p>
+                            <a href="#" class="btn btn-primary">Estou Interessado!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Aventura ao ar livre!
+                        </div>
+                        <img src="./media/carro-bmw.png" />
+                        <div class="card-body">
+                            <h4 class="card-title">BWM Z4</h4>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quasi natus sint omnis ducimus rem quam officia odit quaerat, nihil fuga, aspernatur nulla ex veniam ea ad, explicabo dolorum et.
+                            </p>
+                            <a href="#" class="btn btn-primary">Estou Interessado!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
